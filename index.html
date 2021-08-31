@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Resilia</title>
+
+    <script scr ="projeto.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <form class="container">
+            <h1 class="title"> (De)codificando</h1>
+
+            <div class="message">
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="50" rows="7" id="mensagem" class="input-padrao" required></textarea>
+            </div>
+
+                <select name="select" id="select">
+                    <option value disabled selected>Escolha...</option>
+                    <option value=cipher id="idCesar">Cifra de Cesar</option>
+                    <option value=base id ="idBase">Base 64</option>
+                </select>
+
+            <div class=cifra id="invisivel">
+                <input type="number" placeholder="Incremento" id="incCesar">
+            </div>    
+
+            <section>
+                <input type="radio" id="codificado" name="codificar" value="codificado" checked>
+                <label for="codificado"> Codificar</label>
+                <input type="radio" id="decodificado" name="codificar" value="decodificado">
+                <label for="decodificado"> Decodificar</label><br>
+            </section>
+
+            <div>
+                <button type ="submit" id="botaoCod" class="codBotao">Codificar</button>
+                <button type ="submit" id="botaoDec" class="decodBotao">Decodificar</button>  
+            </div>
+
+            <div>
+                <label for="mensagem">Resultado</label>
+                <textarea cols="50" rows="7" id="resultado" readonly></textarea>
+            </div>
+        </form>
+    </main>    
+</body>
+</html>
