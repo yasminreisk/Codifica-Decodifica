@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Projeto Resilia</title>
 
-    <script scr ="projeto.js" defer></script>
+    <script src = "projetocopia.js" defer></script>
 
 </head>
 <body>
+    <header class="title"> <h1> (De)codificando</h1> 
+    </header>
     <main>
         <form class="container">
-            <h1 class="title"> (De)codificando</h1>
-
             <div class="message">
                 <label for="mensagem">Mensagem</label>
                 <textarea cols="50" rows="7" id="mensagem" class="input-padrao" required></textarea>
             </div>
 
-                <select name="select" id="select">
+                <select name="opcao" id="opcao">
                     <option value disabled selected>Escolha...</option>
                     <option value=cipher id="idCesar">Cifra de Cesar</option>
                     <option value=base id ="idBase">Base 64</option>
@@ -32,7 +32,7 @@
 
             <section>
                 <input type="radio" id="codificado" name="codificar" value="codificado" checked>
-                <label for="codificado"> Codificar</label>
+                <label for="codificado" > Codificar</label>
                 <input type="radio" id="decodificado" name="codificar" value="decodificado">
                 <label for="decodificado"> Decodificar</label><br>
             </section>
